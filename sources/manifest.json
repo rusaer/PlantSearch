@@ -1,0 +1,23 @@
+﻿{
+  "update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "PlantSearch",
+  "version": "1.0",
+  "manifest_version": 2,
+  "homepage_url": "http://bio.rusaer.com",
+  "description": "可以方便快捷的搜索各大植物数据库，包括图片和内容。主要包含两大功能，可以选取网页内容进行搜索，当右键图片时可以调用google image search 搜索相似图片；右上角图标提供快速搜索和链接的功能。目的只是为了更方便的使用和鉴定植物。使用过程中如有问题请找@rusaer反馈。",
+  "permissions": ["contextMenus","tabs"],
+  "icons": 
+  { 
+    "16": "icon16.png",             
+    "48": "icon48.png",            
+    "128": "icon128.png" 
+  }, 
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "icon38.png",
+    "default_title": "PlantSearch", 
+    "default_popup": "popup.html"
+  }
+}
